@@ -15,7 +15,7 @@ function App() {
       <img
         src={airvend}
         alt="Airvend"
-        className="absolute top-[36px] left-[615px] "
+        className="absolute top-[20px] left-[615px] "
       />
       <Login />
     </>
