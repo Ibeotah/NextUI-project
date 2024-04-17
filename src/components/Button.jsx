@@ -5,7 +5,7 @@ function Button({ pemail, ppassword }) {
     console.log(pemail, ppassword);
   };
   return (
-    <div className="w-[354px] h-[48px] gap-2.5 bg-green-600 px-[32px] py-[10px] rounded-lg">
+    <div className=" h-[48px] gap-2.5 bg-green-600 px-[32px] py-[10px] rounded-lg">
       <button
         onClick={submit}
         className="font-Rubik text-base leading-none font-medium text-center text-white"

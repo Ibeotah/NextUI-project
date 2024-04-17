@@ -1,34 +1,23 @@
-import React, { useState } from "react";
+import React from "react";
+import { Input } from "@nextui-org/react";
 
-const EmailForm = ({ pemail, psetEmail }) => {
-  const handleEmailChange = (event) => {
-    psetEmail(event.target.value);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    console.log("Email submitted:", pemail);
-  };
-
+export default function Email() {
+  const placement = "outside";
   return (
-    <div className="w-[354px] h-[75px] gap-2 mb-7">
-      <div className="w-[125px] h-[19px] font-Rubik font-normal text-base leading-[1.2] text-gray-400">
-        Email Address
+    // <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-2">
+      {/* <h3 className="text-default-500 text-small">Without placeholder</h3> */}
+      <div className="flex w-full flex-wrap items-end md:flex-nowrap mb-6 md:mb-0 gap-4">
+        {/* Render only one Input with labelPlacement set to "outside" */}
+        <Input
+          key={placement}
+          type="email"
+          label="Email"
+          labelPlacement={placement}
+          placeholder="Enter email address"
+          // description={placement}
+        />
       </div>
-      <>
-        <div>
-          <input
-            type="email"
-            id="email"
-            value={pemail}
-            onChange={handleEmailChange}
-            className="w-[334px] h-[48px] rounded-lg bg-gray-200 mt-2 pl-2"
-          />
-        </div>
-      </>
     </div>
   );
-};
-
-export default EmailForm;
+}

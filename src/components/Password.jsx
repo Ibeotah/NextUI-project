@@ -27,7 +27,7 @@ const PasswordForm = ({
 
   return (
     <>
-      <div className="w-[354px] h-[97px] gap-2 mb-7">
+      <div className=" h-[97px] gap-2 mb-7">
         <div className="w-[95px] h-[19px] font-Rubik font-normal text-base leading-[1.2] text-gray-400">
           Password
         </div>
@@ -39,7 +39,7 @@ const PasswordForm = ({
               name="password"
               value={ppassword}
               onChange={handleChange}
-              className="w-[334px] h-[48px] rounded-lg bg-gray-200 mt-2 mb-2 pl-2"
+              className="w-full h-[48px] rounded-lg bg-gray-200 mt-2 mb-2 pl-2"
             />
           </div>
           {pincorrectPassword && (

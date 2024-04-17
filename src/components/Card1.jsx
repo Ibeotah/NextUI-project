@@ -28,7 +28,7 @@ const Login = () => {
   return (
     <div>
       <form
-        className="bg-white w-[434px] h-[476px] relative top-[46px] left-[273px] p-[40px] gap-[30px] rounded-xl"
+        className=" bg-white  p-[40px] gap-[30px] rounded-xl"
         onSubmit={handleSubmit}
       >
         <h3 className="w-[65px] h-[32px] font-Rubik font-medium leading-[31.68px] mb-7">
@@ -45,7 +45,7 @@ const Login = () => {
         <Button pemail={email} ppassword={password} />
       </form>
       <p
-        className={`w-[108px] h-[14px] relative top-16 left-[420px]  font-Rubik font-medium text-center text-[14px] leading-[14px] text-white cursor-pointer ${
+        className={`h-[14px] font-Rubik font-medium text-center text-[14px] leading-[14px] pt-4 text-white cursor-pointer ${
           resetClicked ? "animate-pulse" : ""
         }`}
         onClick={handleResetClick}
