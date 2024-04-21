@@ -5,13 +5,11 @@
 @tailwind utilities;
 
 body {
-  width: 100vw;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
+  /* width: 100vw; */
+  /* min-height: 100vh; */
+  /* padding: 20px; */
   background-color: rgb(46 16 101);
-  position: relative;
-  overflow: hidden;
+  /* position: relative; */
+  /* overflow: auto; */
 }
+
